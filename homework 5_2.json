@@ -1,0 +1,35 @@
+Country: [
+    {
+        "year": 2024,
+        "weeknum": 18,
+        "new_case": 1880,
+        "total_case": 14937,
+        "new_case_excludeabroad": 1880,
+        "total_case_excludeabroad": 14937,
+        "new_recovered": 0,
+        "total_recovered": 0,
+        "new_death": 11,
+        "total_death": 104,
+        "case_foreign": 0,
+        "case_prison": 0,
+        "case_walkin": 1880,
+        "case_new_prev": 0,
+        "case_new_diff": 1880,
+        "death_new_prev": 0,
+        "death_new_diff": 11,
+        "update_date": "2024-05-12 17:32:18"
+    }
+],
+Death: [
+{
+    "year": 2024,
+    "weeknum": 18,
+    "province": "ฉะเชิงเทรา",
+    "age": "85",
+    "age_range": ">= 70 ปี",
+    "occupation": null,
+    "type": null,
+    "death_cluster": null,
+    "update_date": "2024-05-12"
+}
+]

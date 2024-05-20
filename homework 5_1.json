@@ -1,0 +1,49 @@
+{
+    "people": [
+    {
+    "firstname": "John",
+    "lastname": "Doe",
+    "age": 30,
+    "gender": "male",
+    "address": {
+    "sub_district": "Sukhumvit",
+    "district": "Wattana",
+    "province": "Bangkok"
+    },
+    "contact": {
+    "mobile": "081-234-5678",
+    "email": "john.doe@example.com"
+    }
+    },
+    {
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "age": 25,
+    "gender": "female",
+    "address": {
+    "sub_district": "Tha Sala",
+    "district": "Muang",
+    "province": "Chiang Mai"
+    },
+    "contact": {
+    "mobile": "082-345-6789",
+    "email": "jane.smith@example.com"
+    }
+    },
+    {
+    "firstname": "David",
+    "lastname": "Brown",
+    "age": 35,
+    "gender": "male",
+    "address": {
+    "sub_district": "Patong",
+    "district": "Kathu",
+    "province": "Phuket"
+    },
+    "contact": {
+    "mobile": "083-456-7890",
+    "email": "david.brown@example.com"
+    }
+    }
+    ]
+    }

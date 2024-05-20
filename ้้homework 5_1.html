@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>User Data</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Avatar</th>
+                </tr>
+            </thead>
+            <tbody id="userData">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        axios.get("https://reqres.in/api/users/").then(function (response) {
+            let userData = document.getElementById('userData');
+            let data = response.data.data;
+
+            data.forEach(function(user) {
+                let row = `
+                    <tr>
+                        <td>${user.id}</td>
+                        <td>${user.email}</td>
+                        <td>${user.first_name}</td>
+                        <td>${user.last_name}</td>
+                        <td><img src="${user.avatar}" alt="${user.first_name}'s Avatar" style="max-width: 100px;"></td>
+                    </tr>
+                `;
+                userData.innerHTML += row;
+            });
+        });
+    </script>
+</body>
+</html>
